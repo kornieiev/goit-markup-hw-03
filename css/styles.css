@@ -336,6 +336,10 @@ div {
 
 /* ---------- PORTFOLIO ---------- */
 /* ---------- PORTFOLIO ---------- */
+
+.filter {
+  margin-bottom: 94px;
+}
 .filter-btn {
   display: flex;
   justify-content: center;
