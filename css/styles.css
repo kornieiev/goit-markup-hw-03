@@ -154,19 +154,25 @@ header .container {
 }
 
 /* ---------- ГЕРОЙ ---------- */
-.hero-content {
+/* .hero-content {
   max-width: 696px;
   padding: 200px auto 30px auto;
   display: flex;
   text-align: center;
-}
+} */
 div {
   display: block;
 }
-.hero {
+.section.hero {
+  /* padding-top: 200px;
+  padding-bottom: 200px; */
   background-color: var(--first-bcg-color);
   padding: 200px 0;
 }
+/* .hero {
+  background-color: var(--first-bcg-color);
+  padding: 200px 0;
+} */
 .hero-title {
   margin: 0 auto 30px;
   max-width: 696px;
@@ -199,12 +205,13 @@ div {
 
 /* ---------- ОСОБЕННОСТИ ---------- */
 .section {
+  padding: 94px 0;
 }
-.features {
-  padding-top: 94px;
+
+.section.features {
   padding-bottom: 94px;
 }
-.features-title-name {
+.features-subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -224,15 +231,19 @@ div {
 .features-list {
   list-style: none;
   display: flex;
-  max-width: 270px;
   gap: 30px;
   align-items: center;
 }
+/* .features-item {
+  max-width: 270px;
+} */
 /* ---------- ПОРТФОЛИО ---------- */
+.section.portfolio {
+  padding-top: 0;
+}
 .portfolio {
   background-color: var(--third-bcg-color);
   text-align: center;
-  padding-bottom: 94px;
 }
 .portfolio-title,
 .team-title {
@@ -243,7 +254,6 @@ div {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 .portfolio-list {
   display: flex;
@@ -258,6 +268,7 @@ div {
 .team {
   background-color: var(--second-bcg-color);
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 .team-name {
   font-weight: 500;
@@ -293,13 +304,9 @@ div {
 
 /* ---------- ФУТЕР ---------- */
 .footer {
-  padding: 60px 15px;
+  padding: 60px;
 }
-.footer-container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .footer-logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -318,8 +325,11 @@ div {
 .footer-list {
   margin-top: 20px;
 }
-.footer-list-item {
-  margin: 5px;
+.footer-list-item:nth-child(1) {
+  margin-bottom: 10px;
+}
+.footer-list-item:nth-child(2) {
+  margin-bottom: 10px;
 }
 .footer-list-address {
   font-style: normal;
@@ -330,7 +340,7 @@ div {
   color: var(--third-text-color);
 }
 .footer-list-emph {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -347,7 +357,8 @@ div {
 /* ---------- PORTFOLIO ---------- */
 
 .filter {
-  margin: 94px 0 50px;
+  padding: 94px 0 50px;
+  background-color: aqua;
 }
 .filter-btn {
   display: flex;
